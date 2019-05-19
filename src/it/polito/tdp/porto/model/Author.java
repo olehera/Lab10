@@ -7,7 +7,6 @@ public class Author {
 	private String firstname;
 		
 	public Author(int id, String lastname, String firstname) {
-		super();
 		this.id = id;
 		this.lastname = lastname;
 		this.firstname = firstname;
@@ -44,7 +43,7 @@ public class Author {
 
 	@Override
 	public String toString() {
-		return "Author [id=" + id + ", lastname=" + lastname + ", firstname=" + firstname + "]";
+		return firstname+" "+lastname;
 	}
 
 	@Override
@@ -68,6 +67,5 @@ public class Author {
 			return false;
 		return true;
 	}
-	
-	
+		
 }

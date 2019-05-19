@@ -68,8 +68,7 @@ public class Paper {
 
 	@Override
 	public String toString() {
-		return "Paper [eprintid=" + eprintid + ", title=" + title + ", issn=" + issn + ", publication=" + publication
-				+ ", type=" + type + ", types=" + types + "]";
+		return title+" "+issn;
 	}
 
 	@Override
@@ -93,7 +92,5 @@ public class Paper {
 			return false;
 		return true;
 	}
-	
-	
 
 }

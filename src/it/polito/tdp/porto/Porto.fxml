@@ -10,14 +10,17 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="it.polito.tdp.porto.PortoController">
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polito.tdp.porto.PortoController">
    <top>
       <Label text="Laboratorio 10 - Porto" BorderPane.alignment="CENTER">
          <BorderPane.margin>
             <Insets bottom="5.0" />
          </BorderPane.margin>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
       </Label>
    </top>
    <center>
@@ -42,7 +45,7 @@
                   <Button mnemonicParsing="false" onAction="#handleSequenza" text="Sequenza articoli" GridPane.columnIndex="2" GridPane.rowIndex="1" />
                </children>
             </GridPane>
-            <TextArea fx:id="txtResult" />
+            <TextArea fx:id="txtResult" editable="false" />
          </children>
          <BorderPane.margin>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
