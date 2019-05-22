@@ -68,7 +68,7 @@ public class Paper {
 
 	@Override
 	public String toString() {
-		return title+" "+issn;
+		return title+" "+issn+" "+publication+" "+type;
 	}
 
 	@Override

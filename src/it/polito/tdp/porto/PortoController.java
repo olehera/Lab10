@@ -6,6 +6,7 @@ import java.util.ResourceBundle;
 
 import it.polito.tdp.porto.model.Author;
 import it.polito.tdp.porto.model.Model;
+import it.polito.tdp.porto.model.Paper;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
@@ -52,7 +53,14 @@ public class PortoController {
 
     @FXML
     void handleSequenza(ActionEvent event) {
-    	boxSecondo.getValue();
+    	Author source = boxPrimo.getValue();
+    	Author target =  boxSecondo.getValue();
+    	
+    	List<Paper> articoli = model.sequenzaArticoli(source, target);
+    	
+    	txtResult.setText("Lista di articoli:\n\n");
+    	for (Paper p : articoli)
+    		txtResult.appendText(p+"\n");
     }
 
     @FXML
